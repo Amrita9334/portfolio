@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">product</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">services</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>web developer</p>
+            <h1>I'm <span>Amrita</span> Pandey</h1>
+        </div>
+    </div>
+   </div> 
+
+   <div class="about">
+<div class="container">
+    <div class="row">
+        <div class=" about-col-1">
+            <img src="image logo4.jpg">
+        </div>
+        <div class=" about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequatur ipsum vitae
+                modi magni porro quod, minima optio, reprehenderit voluptas quis beatae distinctio
+                 sit unde perspiciatis qui, numquam quisquam quaerat.</p>
+
+                 <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">skills</p>
+                    <p class="tab-links" onclick="opentab('Education')"">Education</p>
+                    <p class="tab-links" onclick="opentab('Experience')"">Experience</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>HTML<br></span>Web desinging</li>
+                        <li><span>Css<br></span>Web Developement</li>
+                        <li><span>Javascript<br></span>C Language</li>
+                    </ul>
+                 </div>
+
+                 <div class="tab-content" id="Education">
+                    <ul>
+                        <li><span>HTML<br></span>Web desinging</li>
+                        <li><span>Css<br></span>Web Developement</li>
+                        <li><span>Javascript<br></span>C Language</li>
+                    </ul>
+                 </div>
+
+                 <div class="tab-content" id="Experience">
+                    <ul>
+                        <li><span>HTML<br></span>Web desinging</li>
+                        <li><span>Css<br></span>Web Developement</li>
+                        <li><span>Javascript<br></span>C Language</li>
+                    </ul>
+                 </div>
+        </div>
+
+    </div>
+</div>
+
+   </div>
+
+   <!--  ----------------------------service----------------------------------- -->
+    
+   <div id="service">
+    <div class="container">
+        <h1 class="sub-title">my services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>web design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostr</p>
+                    <a href="#">learn more</a>
+            </div>
+
+            <div>
+                <i class="c language.png"></i>
+                <h2>web development</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostr</p>
+                    <a href="#">learn more</a>
+            </div>
+
+            <div>
+                <i class=""></i>
+                <h2>c language</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostr</p>
+                    <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- -------------------------------------portfolio------------------------------------------ -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">my work</h1>
+<div class="work-list">
+    <div class="work">
+        <img src="img.jpeg">
+        <div class="layer">
+            <h3>social media</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nobis quidem nam debitis incidu</p>
+            <!-- <a href="#"><i class="limk"></i></a> -->
+        </div>
+    </div>
+    <div class="work">
+        <img src="img.jpeg">
+        <div class="layer">
+            <h3>social media</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nobis quidem nam debitis incidu</p>
+            <!-- <a href="#"><i class="link"></i></a> -->
+        </div>
+    </div>
+    <div class="work">
+        <img src="img.jpeg">
+        <div class="layer">
+            <h3>social media</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nobis quidem nam debitis incidu</p>
+            <!-- <a href="#"><i class="link"></i></a> -->
+        </div>
+    </div>
+</div>
+    </div>
+   </div>
+   
+   
+   
+   
+ <script> 
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontent = document.getElementsByClassName("tab-contants");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classlist.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classlist.remove("active-tab");
+    }
+    event.currentTarget.classlist.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+}
+    
+</script>
+
+
+
+</body>
+</html>
